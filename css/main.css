@@ -3,7 +3,7 @@
   --light-color: white;
   --semilight-color: #f2f2f2;
   --dark-color: #333;
-  --max-width: 1100px;
+  --max-width: 1280px;
 }
 
 * {
@@ -31,10 +31,6 @@ ul {
   list-style: none;
 }
 
-img {
-  width: 100%;
-}
-
 h1,
 h2,
 h3,
@@ -43,6 +39,7 @@ h5,
 h6 {
   margin: 0.55rem 0;
   line-height: 1.5rem;
+  font-weight: 750;
 }
 
 .py-1 {
@@ -62,6 +59,44 @@ h6 {
 }
 .p-3 {
   padding: 3rem;
+}
+
+.my-1 {
+  margin: 1rem 0rem;
+}
+
+.my-2 {
+  margin: 2rem 0rem;
+}
+
+.my-3 {
+  margin: 3rem 0rem;
+}
+
+.my-4 {
+  margin: 4rem 0rem;
+}
+.text-center {
+  text-align: center;
+}
+.section-title {
+  font-size: 2rem;
+  display: block;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+.bottom-line {
+  height: 2px;
+  width: 3rem;
+  background: var(--primary-color);
+  display: block;
+  margin: 0 auto 1rem auto;
+}
+.lead {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
 }
 
 .container {
@@ -85,6 +120,27 @@ h6 {
   color: var(--primary-color) !important;
 }
 
+/* Button */
+.button,
+.button-light {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 30px;
+  color: #000;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 5px;
+}
+
+.button-light {
+  background-color: var(--light-color);
+}
+
+.button:hover,
+.button-light:hover {
+  opacity: 0.9;
+}
+
 /* Navbar */
 .navbar {
   display: flex;
@@ -94,7 +150,7 @@ h6 {
   color: var(--light-color);
   opacity: 0.9;
   width: 100%;
-  height: 70px;
+  height: 75px;
   position: fixed;
   top: 0px;
   padding: 0 30px;
@@ -118,12 +174,15 @@ h6 {
 
 #logo {
   border: none;
+  width: 180px;
+  display: inline-block;
+  box-sizing: border-box;
   padding: 10px;
 }
-
 #logo img {
-  height: 70px;
-  margin: 0px;
+  margin-top: 10px;
+  max-width: 80%;
+  max-height: 80%;
 }
 
 .navbar ul {
@@ -140,6 +199,7 @@ h6 {
   height: 100vh;
   position: relative;
   color: #fff;
+  /* background-attachment: fixed; */
 }
 
 .hero .content {
@@ -177,6 +237,127 @@ h6 {
   height: 100%;
   background: rgba(0, 0, 0, 0.6);
   z-index: 0;
+}
+
+/* About */
+#home-about {
+  padding-top: 2rem;
+  background-color: var(--semilight-color);
+}
+
+#home-about .opportunity {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10rem;
+  text-align: center;
+}
+
+#home-about .opportunity-card {
+  width: 300px;
+}
+
+#home-about .opportunity-icon {
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  border-radius: 50%;
+  background: #333;
+  color: #fff;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  position: relative;
+  transition: all 1s;
+}
+#home-about .opportunity-icon:hover {
+  background: var(--primary-color);
+}
+
+#home-about h2 {
+  margin-top: 2rem;
+}
+
+/* Join Us */
+#home-join {
+  background: url('../img/board.jpg') no-repeat center center/cover;
+  /* background-attachment: fixed; */
+  height: 70vh;
+  position: relative;
+  color: #fff;
+}
+
+#home-join .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  padding: 0 20px;
+  color: var(--primary-color);
+}
+
+#home-join::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+#home-join .content h1 {
+  padding-top: 25vh;
+  padding-bottom: 2vh;
+  font-size: 55px;
+  z-index: 1;
+}
+
+#home-join .content a {
+  /* font-size: 23px;
+  max-width: 600px; */
+  margin: 20px 0 30px;
+  z-index: 1;
+}
+
+/* Pillars */
+
+#home-pillars {
+  padding-top: 2rem;
+  background-color: var(--semilight-color);
+}
+
+#home-pillars .pillar-card {
+  background-color: white;
+  border: 1px dotted var(--dark-color);
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 2rem;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+#home-pillars .pillar-card .head {
+  font-size: 1.5rem;
+}
+
+#home-pillars .pillar-card .pillar-image {
+  float: left;
+  width: 50%;
+  height: 100%;
+  padding: 1rem;
+}
+
+#home-pillars .pillar-card .pillar-image img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#home-pillars .pillar-card .pillar-description {
+  float: left;
+  width: 50%;
+  padding: 1rem;
+  line-height: 1.7;
 }
 
 /* Footer */
