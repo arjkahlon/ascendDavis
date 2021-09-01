@@ -54,13 +54,22 @@ html {
 .heading {
     color: black;
     text-align: center;
-    padding: 50px;
+    padding: 50px 50px 10px 50px;
 }
 
-/* Card */
+/* Change the color and size of the line under the heading */
+.line {
+  width: 9%;
+  margin: auto;
+  background-color: #f1961f;
+  border: 1px solid #f1961f;
+  margin-bottom: 30px;
+}
+
+/* Alter card sizes and margins */
 .row {
-    margin: auto;
-    width: 70%;
+    margin: 0 auto;
+    width: 85%;
     padding: 10px;
 }
 
@@ -71,18 +80,19 @@ html {
     padding: 0 15px;
 }
 
-/* Responsiveness on smaller devices */
+/* Responsiveness on smaller devices. Lowering the max-width will result it in changing it a single column sooner */
 @media screen and (max-width: 700px) {
   .column {
     width: 100%;
+    margin: auto;
     padding: 20px;
     display: block;
   }
 }
 
-/* Card shadows */
+/* Card shadows (Delete this class c you deem the shadows as unnecessary) */
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2);
 }
 
 /* Some left and right padding inside the container */
@@ -97,7 +107,12 @@ html {
   display: table;
 }
 
+.name {
+  font-size: 21px;
+}
+
 /* Position title */
 .title {
   color: grey;
+  font-size: 13px;
 }
