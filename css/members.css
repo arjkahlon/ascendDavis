@@ -54,7 +54,7 @@ html {
 .heading {
     color: black;
     text-align: center;
-    padding: 50px 50px 10px 50px;
+    padding: 30px 50px 10px 50px;
 }
 
 /* Change the color and size of the line under the heading */
@@ -76,7 +76,7 @@ html {
 .column {
     float: left;
     width: 25%;
-    margin-bottom: 16px;
+    margin-bottom: 28px;
     padding: 0 15px;
 }
 
