@@ -1,0 +1,58 @@
+/* general css for the page */
+#applySteps, #FAQ, #CM {
+    margin: auto;
+    padding: 3rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* css for the steps to apply div*/
+#applySteps{
+    background-color: rgba(255, 155, 5, 0.3);
+}
+
+#applySteps h2 {
+    color: #FF9C04;
+}
+
+/* css for committee member */
+#FAQ h3, #CM h3 {
+    color: #FF9C04;
+}
+
+#CM ul {
+    list-style-type: disc;
+}
+
+/* this could be deleted; directly taken from the main.css */
+.bottom-line {
+    height: 2px;
+    width: 3rem;
+    background: var(--primary-color);
+    display: block;
+    margin: 0 auto 1rem auto;
+}
+
+/* css for the FAQ div */
+#FAQ {
+    border-style: solid;
+}
+
+#FAQ h3 {
+    margin-bottom: 0px;
+}
+
+#FAQ .row {
+    display: flex;
+    position: relative;
+    margin-top: .1rem;
+}
+
+#FAQ .col {
+    flex: 1;
+}

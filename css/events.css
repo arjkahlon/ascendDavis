@@ -1,0 +1,43 @@
+h2 {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.upcomingEvents, .pastEvents {
+    margin-top: 40px;
+    padding: 3rem;
+    display: flex;
+}
+
+.upcomingEvents {
+    background-color: #FF9C04;
+}
+
+.upcomingEvents h3 {
+    color:white;
+}
+
+.pastEvents h3 {
+    color: #FF9C04;
+}
+
+.pastEvents {
+    background-color: rgba(255, 155, 5, 0.3);
+}
+
+.eventInfo, .eventImg {
+    width: 50%;
+    flex: 1;
+}
+
+.eventImg {
+    margin-right: 3rem;
+}
+
+.bottom-line {
+    height: 2px;
+    width: 3rem;
+    background: var(--primary-color);
+    display: block;
+    margin: 0 auto 1rem auto;
+  }
