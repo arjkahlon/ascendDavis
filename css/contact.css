@@ -1,0 +1,39 @@
+:root {
+  --primary-color: #f1961f;
+  --light-color: white;
+  --semilight-color: #f2f2f2;
+  --dark-color: #333;
+  --max-width: 1280px;
+}
+
+#contact-main {
+  background-color: var(--semilight-color);
+}
+
+#contact-main .contact-group {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 5%;
+}
+
+#contact-main .contact-group .contact-image {
+  width: 100%;
+  height: auto;
+}
+#contact-main .contact-group .contact-image img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#contact-main .contact-form {
+  padding-top: 1rem;
+}
+
+#contact-main .text-input {
+  width: 100%;
+  padding: 0.5em;
+  margin-bottom: 0.5em;
+  font-family: "Roboto", sans-serif;
+}
