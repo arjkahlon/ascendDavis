@@ -1,43 +1,54 @@
 h2 {
-    text-align: center;
-    margin-top: 3rem;
+  text-align: center;
+  margin-top: 3rem;
 }
 
-.upcomingEvents, .pastEvents {
-    margin-top: 40px;
-    padding: 3rem;
-    display: flex;
+.hero {
+  height: 40vh;
+}
+
+.upcomingEvents,
+.pastEvents {
+  margin-top: 40px;
+  padding: 3rem;
+  display: flex;
 }
 
 .upcomingEvents {
-    background-color: #FF9C04;
+  background-color: #ff9c04;
 }
 
 .upcomingEvents h3 {
-    color:white;
+  color: white;
 }
 
 .pastEvents h3 {
-    color: #FF9C04;
+  color: #ff9c04;
 }
 
 .pastEvents {
-    background-color: rgba(255, 155, 5, 0.3);
+  background-color: rgba(255, 155, 5, 0.3);
 }
 
-.eventInfo, .eventImg {
-    width: 50%;
-    flex: 1;
+.eventInfo,
+.eventImg {
+  width: 50%;
+  flex: 1;
 }
 
 .eventImg {
-    margin-right: 3rem;
+  margin-right: 3rem;
+}
+
+.eventImg img {
+  max-width: 100%;
+  max-width: 100%;
 }
 
 .bottom-line {
-    height: 2px;
-    width: 3rem;
-    background: var(--primary-color);
-    display: block;
-    margin: 0 auto 1rem auto;
-  }
+  height: 2px;
+  width: 3rem;
+  background: var(--primary-color);
+  display: block;
+  margin: 0 auto 1rem auto;
+}

@@ -1,9 +1,13 @@
 /* Header */
 .hero {
-  background: url('../img/members_cover.JPG') no-repeat center center/cover;
+  background: url("../img/members_cover.JPG") no-repeat center center/cover;
   height: 100vh;
   position: relative;
   color: #fff;
+}
+
+.hero {
+  height: 40vh;
 }
 
 .hero .content {
@@ -33,7 +37,7 @@
 }
 
 .hero::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -44,17 +48,19 @@
 }
 
 html {
-    box-sizing: border-box;
-  }
-  
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
-  
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 .heading {
-    color: black;
-    text-align: center;
-    padding: 30px 50px 10px 50px;
+  color: black;
+  text-align: center;
+  padding: 30px 50px 10px 50px;
 }
 
 /* Change the color and size of the line under the heading */
@@ -68,16 +74,16 @@ html {
 
 /* Alter card sizes and margins */
 .row {
-    margin: 0 auto;
-    width: 85%;
-    padding: 10px;
+  margin: 0 auto;
+  width: 85%;
+  padding: 10px;
 }
 
 .column {
-    float: left;
-    width: 25%;
-    margin-bottom: 28px;
-    padding: 0 15px;
+  float: left;
+  width: 25%;
+  margin-bottom: 28px;
+  padding: 0 15px;
 }
 
 /* Responsiveness on smaller devices. Lowering the max-width will result it in changing it a single column sooner */
@@ -101,7 +107,8 @@ html {
 }
 
 /* Clear floats */
-.container::after, .row::after {
+.container::after,
+.row::after {
   content: "";
   clear: both;
   display: table;

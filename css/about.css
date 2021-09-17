@@ -32,7 +32,7 @@
 /* Header */
 .hero {
   background: url("../img/about_cover.jpg") no-repeat center center/cover;
-  height: 100vh;
+  height: 40vh;
   position: relative;
   color: #fff;
 }
