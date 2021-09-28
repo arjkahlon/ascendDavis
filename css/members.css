@@ -1,6 +1,6 @@
 /* Header */
 .hero {
-  background: url("../img/members_cover.JPG") no-repeat center center/cover;
+  background: url('../img/eight.jpg') no-repeat center center/cover;
   height: 100vh;
   position: relative;
   color: #fff;
@@ -37,7 +37,7 @@
 }
 
 .hero::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -109,7 +109,7 @@ html {
 /* Clear floats */
 .container::after,
 .row::after {
-  content: "";
+  content: '';
   clear: both;
   display: table;
 }

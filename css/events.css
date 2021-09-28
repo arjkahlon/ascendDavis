@@ -5,6 +5,7 @@ h2 {
 
 .hero {
   height: 40vh;
+  background: url('../img/five.jpg') no-repeat center center/cover;
 }
 
 .upcomingEvents,
@@ -51,4 +52,8 @@ h2 {
   background: var(--primary-color);
   display: block;
   margin: 0 auto 1rem auto;
+}
+
+#main-footer h2 {
+  text-align: left;
 }

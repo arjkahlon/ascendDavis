@@ -31,7 +31,7 @@
 
 /* Header */
 .hero {
-  background: url("../img/about_cover.jpg") no-repeat center center/cover;
+  background: url('../img/one.jpg') no-repeat center center/cover;
   height: 40vh;
   position: relative;
   color: #fff;
@@ -64,7 +64,7 @@
 }
 
 .hero::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -97,13 +97,13 @@
   font-size: 0.75rem;
 }
 
-#main-footer .footer-container input[type="email"] {
+#main-footer .footer-container input[type='email'] {
   width: 90%;
   padding: 0.5rem;
   margin-bottom: 0.5rem;
 }
 
-#main-footer .footer-container input[type="submit"] {
+#main-footer .footer-container input[type='submit'] {
   color: var(--light-color);
   background-color: var(--dark-color);
   width: 90%;

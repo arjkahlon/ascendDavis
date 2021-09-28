@@ -370,7 +370,7 @@ h6 {
     'img1 img1 img2 img3 img3'
     'img4 img5 img5 img6 img9'
     'img7 img7 img8 img8 img9';
-  justify-items: stretch;
+  object-fit: cover;
 }
 
 #home-images .grid-img {
@@ -453,7 +453,6 @@ h6 {
   margin: auto;
   justify-content: space-between;
   align-items: center;
-  cursor: pointer;
 }
 
 #main-footer .footer-container .social .fab {

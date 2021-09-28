@@ -8,6 +8,7 @@
 
 .hero {
   height: 40vh;
+  background: url('../img/leader.jpg') no-repeat center center/cover;
 }
 
 #contact-main {
@@ -39,5 +40,5 @@
   width: 100%;
   padding: 0.5em;
   margin-bottom: 0.5em;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
